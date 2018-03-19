@@ -1,10 +1,3 @@
-# Gekko [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
-
-![Gordon Gekko](http://mikevanrossum.nl/static/gekko.jpg)
-
-*The most valuable commodity I know of is information.*
-
--Gordon Gekko
 
 Gekko is a Bitcoin TA trading and backtesting platform that connects to popular Bitcoin exchanges. It is written in JavaScript and runs on [Node.js](http://nodejs.org).
 
@@ -17,6 +10,8 @@ See [the documentation website](https://gekko.wizb.it/docs/introduction/about_ge
 ## Installation & Usage
 
 See [the installing Gekko doc](https://gekko.wizb.it/docs/installation/installing_gekko.html).
+
+Add-ons: npm install convnetjs zero-fill stats-lite numbro mathjs cluster lodash gauss async talib tulind
 
 ## Community & Support
 
