@@ -1,6 +1,4 @@
-﻿// @link http://en.wikipedia.org/wiki/Exponential_moving_average#Exponential_moving_average
-
-var Indicator = function(weight) {
+﻿var Indicator = function(weight) {
   this.input = 'price';
   this.weight = weight;
   this.result = false;
@@ -8,8 +6,7 @@ var Indicator = function(weight) {
 }
 
 Indicator.prototype.update = function(price) {
-  // The first time we can't calculate based on previous
-  // ema, because we haven't calculated any yet.
+  // 第一次进入，无法计算EMA值，因为没有yesterday
   if(this.result === false)
     this.result = price;
 
@@ -19,6 +16,7 @@ Indicator.prototype.update = function(price) {
   return this.result;
 }
 
+//  同上方公式，
 //    calculation (based on tick/day):
 //  EMA = Price(t) * k + EMA(y) * (1 – k)
 //  t = today, y = yesterday, N = number of days in EMA, k = 2 / (N+1)
@@ -34,3 +32,4 @@ Indicator.prototype.calculate = function(price) {
 }
 
 module.exports = Indicator;
+
